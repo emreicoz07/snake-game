@@ -1,0 +1,190 @@
+/* Google Material Icons için font */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.mobile-controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+}
+
+.control-type-switch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.switch-button {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.switch-button.active {
+  background: rgba(76, 175, 80, 0.8);
+}
+
+.controls-container.modern {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.control-center {
+  width: 60px;
+  height: 60px;
+}
+
+.control-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background: rgba(76, 175, 80, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.control-button:active {
+  transform: scale(0.95);
+  background: rgba(76, 175, 80, 1);
+}
+
+.material-icons {
+  font-size: 30px;
+}
+
+/* Kaydırma alanı */
+.swipe-area {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 90vw;
+  height: 170px;
+  margin-top: 5px;
+  background: rgba(28, 28, 28, 0.95);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(76, 175, 80, 0.15);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  margin-bottom: env(safe-area-inset-bottom, 10px);
+}
+
+.swipe-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.swipe-hint .material-icons {
+  font-size: 36px;
+  color: rgba(76, 175, 80, 0.9);
+  text-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+  animation: float 2s infinite ease-in-out;
+}
+
+.swipe-hint p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Aktif durum stilleri */
+.swipe-area.active {
+  background: rgba(76, 175, 80, 0.15);
+  border-color: rgba(76, 175, 80, 0.3);
+  box-shadow: 
+    0 15px 40px rgba(76, 175, 80, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Yön göstergeleri */
+.swipe-area.swipe-up {
+  background: linear-gradient(to top, 
+    rgba(28, 28, 28, 0.95),
+    rgba(76, 175, 80, 0.2)
+  );
+}
+
+.swipe-area.swipe-down {
+  background: linear-gradient(to bottom,
+    rgba(28, 28, 28, 0.95),
+    rgba(76, 175, 80, 0.2)
+  );
+}
+
+.swipe-area.swipe-left {
+  background: linear-gradient(to left,
+    rgba(28, 28, 28, 0.95),
+    rgba(76, 175, 80, 0.2)
+  );
+}
+
+.swipe-area.swipe-right {
+  background: linear-gradient(to right,
+    rgba(28, 28, 28, 0.95),
+    rgba(76, 175, 80, 0.2)
+  );
+}
+
+/* Animasyonlar */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Oyun alanı ile swipe alanı arasındaki boşluk için Game.css'e eklenecek stil */
+
+/* iPhone güvenli alan desteği */
+@supports (padding: max(0px)) {
+  .mobile-controls {
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+} 

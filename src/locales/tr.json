@@ -1,0 +1,32 @@
+{
+  "game": {
+    "title": "Yılan Oyunu",
+    "player": "Oyuncu",
+    "score": "Skor",
+    "gameOver": "Oyun Bitti!",
+    "pressEnter": "Yeniden başlamak için Enter'a basın",
+    "tapScreen": "Yeniden başlamak için ekrana dokun"
+  },
+  "controls": {
+    "up": "Yukarı",
+    "down": "Aşağı",
+    "left": "Sol",
+    "right": "Sağ",
+    "swipeToMove": "Kaydırarak yön değiştir"
+  },
+  "playerForm": {
+    "title": "Yılan Oyunu",
+    "nameLabel": "İsminiz",
+    "startButton": "Oyunu Başlat",
+    "namePlaceholder": "İsminizi girin",
+    "nameRequired": "Lütfen bir isim giriniz",
+    "nameMinLength": "İsim en az 3 karakter olmalıdır",
+    "howToPlay": "Nasıl Oynanır?",
+    "instructions": {
+      "desktop": "Masaüstünde ok tuşlarını kullanın",
+      "mobile": "Mobilde ekrandaki ok butonlarını kullanın",
+      "food": "Yiyecekleri toplayarak büyüyün",
+      "walls": "Duvarlara ve kendi kuyruğunuza çarpmamaya dikkat edin"
+    }
+  }
+} 

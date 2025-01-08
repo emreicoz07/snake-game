@@ -1,0 +1,32 @@
+{
+  "game": {
+    "title": "Snake Game",
+    "player": "Player",
+    "score": "Score",
+    "gameOver": "Game Over!",
+    "pressEnter": "Press Enter to restart",
+    "tapScreen": "Tap screen to restart"
+  },
+  "controls": {
+    "up": "Up",
+    "down": "Down",
+    "left": "Left",
+    "right": "Right",
+    "swipeToMove": "Swipe to change direction"
+  },
+  "playerForm": {
+    "title": "Snake Game",
+    "nameLabel": "Your Name",
+    "startButton": "Start Game",
+    "namePlaceholder": "Enter your name",
+    "nameRequired": "Please enter a name",
+    "nameMinLength": "Name must be at least 3 characters",
+    "howToPlay": "How to Play?",
+    "instructions": {
+      "desktop": "Use arrow keys on desktop",
+      "mobile": "Use on-screen arrow buttons on mobile",
+      "food": "Collect food to grow",
+      "walls": "Avoid hitting walls and your tail"
+    }
+  }
+} 
